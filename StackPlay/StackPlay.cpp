@@ -6,10 +6,6 @@
 
 int main()
 {
-	//const std::string anExpression = "((5 + 3)/2)";
-	//checking that the above expression is "balanced" is a classic application 
-	//of a stack data structure
-
 	try
 	{
 		CustomStack myStackyOf5Strings; 
