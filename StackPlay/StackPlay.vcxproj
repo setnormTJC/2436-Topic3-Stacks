@@ -124,10 +124,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CustomStack.cpp" />
-    <ClCompile Include="StackPlay.cpp" />
+    <ClCompile Include="MyException.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CustomStack.h" />
+    <ClInclude Include="demos.h" />
+    <ClInclude Include="MyException.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

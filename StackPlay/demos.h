@@ -1,14 +1,11 @@
-// StackPlay.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
-#include <iostream>
+#pragma once
 #include "CustomStack.h"
 
-int main()
+void demoSimpleStackExample()
 {
 	try
 	{
-		CustomStack myStackyOf5Strings; 
+		StaticStack myStackyOf5Strings;
 
 		myStackyOf5Strings.push("Bob");
 
@@ -16,25 +13,30 @@ int main()
 
 		myStackyOf5Strings.push("Carol");
 
-		myStackyOf5Strings.pop(); 
+		myStackyOf5Strings.pop();
 
 		myStackyOf5Strings.push("Darth");
 
-		myStackyOf5Strings.pop(); 
+		myStackyOf5Strings.pop();
 
 		std::cout << "Top contents after pushing a few and popping a couple:\n";
 		std::cout << myStackyOf5Strings.top() << "\n"; //SHOULD be "Alice"
 
 
-		myStackyOf5Strings.pop(); 
+		myStackyOf5Strings.pop();
 		myStackyOf5Strings.pop();
 		myStackyOf5Strings.pop(); //throws exception!
 		//myStackyOf5Strings.pop();
-	} 
+	}
 
 	catch (const std::exception& e)
 	{
 		std::cout << e.what() << "\n";
 	}
-}
 
+	catch (const MyException& e)
+	{
+		std::cout << e.whatWentWrong() << "\n";
+	}
+
+}

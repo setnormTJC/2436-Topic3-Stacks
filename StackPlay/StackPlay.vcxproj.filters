@@ -15,15 +15,24 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="StackPlay.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CustomStack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MyException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CustomStack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="demos.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
